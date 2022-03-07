@@ -1,0 +1,2 @@
+create_turtle:learning_communication:turtle_circle_position
+-DCATKIN_DEVEL_PREFIX=/home/nuc/ros/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/nuc/ros/catkin_ws/install -G Unix Makefiles

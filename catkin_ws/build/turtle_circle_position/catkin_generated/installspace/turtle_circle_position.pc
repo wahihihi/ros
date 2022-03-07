@@ -1,0 +1,8 @@
+prefix=/home/nuc/ros/catkin_ws/install
+
+Name: turtle_circle_position
+Description: Description of turtle_circle_position
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
