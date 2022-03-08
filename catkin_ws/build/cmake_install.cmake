@@ -134,6 +134,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/nuc/ros/catkin_ws/build/create_turtle/cmake_install.cmake")
   include("/home/nuc/ros/catkin_ws/build/learning_communication/cmake_install.cmake")
   include("/home/nuc/ros/catkin_ws/build/turtle_circle_position/cmake_install.cmake")
+  include("/home/nuc/ros/catkin_ws/build/turtle_controller/cmake_install.cmake")
 
 endif()
 

@@ -8,4 +8,5 @@
 
 # modified environment variables
 export PWD='/home/nuc/ros/catkin_ws/build'
+export PYTHONPATH='/opt/ros/noetic/lib/python3/dist-packages'
 export ROS_PACKAGE_PATH='/home/nuc/ros/catkin_ws/src:/home/nuc/ros/catkin_ws/src/create_turtle:/home/nuc/catkin_ws/src:/opt/ros/noetic/share'
