@@ -8,11 +8,11 @@ project(turtle_controller)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
-  message_generation
   roscpp
   rospy
   std_msgs
   std_srvs
+  message_generation
 )
 
 ## System dependencies are found with CMake's conventions
@@ -76,8 +76,16 @@ find_package(catkin REQUIRED COMPONENTS
 # )
 
 
-add_service_files(FILES TurtlesSrv.srv)
-generate_messages(DEPENDENCIES std_msgs)
+add_service_files(
+  FILES
+  TurtleControlSrv.srv
+  TurtlesSrv.srv
+)
+
+generate_messages(
+  DEPENDENCIES
+  std_msgs
+)
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
 ################################################
@@ -110,7 +118,7 @@ generate_messages(DEPENDENCIES std_msgs)
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES turtle_controller
-   CATKIN_DEPENDS message_runtime roscpp rospy std_msgs std_srvs
+   CATKIN_DEPENDS roscpp rospy std_msgs message_runtime
 #  DEPENDS system_lib
 )
 
@@ -159,10 +167,17 @@ add_executable(spawn_a_turtle src/spawn_a_turtle.cpp)
 target_link_libraries(spawn_a_turtle ${catkin_LIBRARIES})
 add_dependencies(spawn_a_turtle ${PROJECT_NAME}_gencpp)
 
-add_executable(spawn_a_turtle_client src/create_turtle_request.cpp)
-target_link_libraries(spawn_a_turtle_client ${catkin_LIBRARIES})
-add_dependencies(spawn_a_turtle_client ${PROJECT_NAME}_gencpp)
+add_executable(create_turtle_request src/create_turtle_request.cpp)
+target_link_libraries(create_turtle_request ${catkin_LIBRARIES})
+add_dependencies(create_turtle_request ${PROJECT_NAME}_gencpp)
 
+add_executable(turtle_adjust src/turtle_adjust.cpp)
+target_link_libraries(turtle_adjust ${catkin_LIBRARIES})
+add_dependencies(turtle_adjust ${PROJECT_NAME}_gencpp)
+
+add_executable(turtle_control_circle src/turtle_control_circle.cpp)
+target_link_libraries(turtle_control_circle ${catkin_LIBRARIES})
+add_dependencies(turtle_control_circle ${PROJECT_NAME}_gencpp)
 #############
 ## Install ##
 #############
