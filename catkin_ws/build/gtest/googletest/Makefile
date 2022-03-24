@@ -48,10 +48,17 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/swh/learning/ros/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/swh/learning/ros/catkin_ws/build
+=======
+CMAKE_SOURCE_DIR = /home/nuc/ros/catkin_ws/src
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/nuc/ros/catkin_ws/build
+>>>>>>> 001c0b86613294c152ae9209fbb9e7f0f1ae8147
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +144,24 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
+<<<<<<< HEAD
 	cd /home/swh/learning/ros/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/swh/learning/ros/catkin_ws/build/CMakeFiles /home/swh/learning/ros/catkin_ws/build/gtest/googletest/CMakeFiles/progress.marks
 	cd /home/swh/learning/ros/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/googletest/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/swh/learning/ros/catkin_ws/build/CMakeFiles 0
+=======
+	cd /home/nuc/ros/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/ros/catkin_ws/build/CMakeFiles /home/nuc/ros/catkin_ws/build/gtest/googletest/CMakeFiles/progress.marks
+	cd /home/nuc/ros/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/googletest/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/ros/catkin_ws/build/CMakeFiles 0
+>>>>>>> 001c0b86613294c152ae9209fbb9e7f0f1ae8147
 .PHONY : all
 
 # The main clean target
 clean:
+<<<<<<< HEAD
 	cd /home/swh/learning/ros/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/googletest/clean
+=======
+	cd /home/nuc/ros/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/googletest/clean
+>>>>>>> 001c0b86613294c152ae9209fbb9e7f0f1ae8147
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +171,38 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
+<<<<<<< HEAD
 	cd /home/swh/learning/ros/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/googletest/preinstall
+=======
+	cd /home/nuc/ros/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/googletest/preinstall
+>>>>>>> 001c0b86613294c152ae9209fbb9e7f0f1ae8147
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
+<<<<<<< HEAD
 	cd /home/swh/learning/ros/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/googletest/preinstall
+=======
+	cd /home/nuc/ros/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/googletest/preinstall
+>>>>>>> 001c0b86613294c152ae9209fbb9e7f0f1ae8147
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
+<<<<<<< HEAD
 	cd /home/swh/learning/ros/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+=======
+	cd /home/nuc/ros/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+>>>>>>> 001c0b86613294c152ae9209fbb9e7f0f1ae8147
 .PHONY : depend
 
 # Convenience name for target.
 gtest/googletest/CMakeFiles/gtest_main.dir/rule:
+<<<<<<< HEAD
 	cd /home/swh/learning/ros/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/googletest/CMakeFiles/gtest_main.dir/rule
+=======
+	cd /home/nuc/ros/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/googletest/CMakeFiles/gtest_main.dir/rule
+>>>>>>> 001c0b86613294c152ae9209fbb9e7f0f1ae8147
 .PHONY : gtest/googletest/CMakeFiles/gtest_main.dir/rule
 
 # Convenience name for target.
@@ -179,12 +212,20 @@ gtest_main: gtest/googletest/CMakeFiles/gtest_main.dir/rule
 
 # fast build rule for target.
 gtest_main/fast:
+<<<<<<< HEAD
 	cd /home/swh/learning/ros/catkin_ws/build && $(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/build
+=======
+	cd /home/nuc/ros/catkin_ws/build && $(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/build
+>>>>>>> 001c0b86613294c152ae9209fbb9e7f0f1ae8147
 .PHONY : gtest_main/fast
 
 # Convenience name for target.
 gtest/googletest/CMakeFiles/gtest.dir/rule:
+<<<<<<< HEAD
 	cd /home/swh/learning/ros/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/googletest/CMakeFiles/gtest.dir/rule
+=======
+	cd /home/nuc/ros/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/googletest/CMakeFiles/gtest.dir/rule
+>>>>>>> 001c0b86613294c152ae9209fbb9e7f0f1ae8147
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/rule
 
 # Convenience name for target.
@@ -194,7 +235,11 @@ gtest: gtest/googletest/CMakeFiles/gtest.dir/rule
 
 # fast build rule for target.
 gtest/fast:
+<<<<<<< HEAD
 	cd /home/swh/learning/ros/catkin_ws/build && $(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/build
+=======
+	cd /home/nuc/ros/catkin_ws/build && $(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/build
+>>>>>>> 001c0b86613294c152ae9209fbb9e7f0f1ae8147
 .PHONY : gtest/fast
 
 src/gtest-all.o: src/gtest-all.cc.o
@@ -203,7 +248,11 @@ src/gtest-all.o: src/gtest-all.cc.o
 
 # target to build an object file
 src/gtest-all.cc.o:
+<<<<<<< HEAD
 	cd /home/swh/learning/ros/catkin_ws/build && $(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+=======
+	cd /home/nuc/ros/catkin_ws/build && $(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+>>>>>>> 001c0b86613294c152ae9209fbb9e7f0f1ae8147
 .PHONY : src/gtest-all.cc.o
 
 src/gtest-all.i: src/gtest-all.cc.i
@@ -212,7 +261,11 @@ src/gtest-all.i: src/gtest-all.cc.i
 
 # target to preprocess a source file
 src/gtest-all.cc.i:
+<<<<<<< HEAD
 	cd /home/swh/learning/ros/catkin_ws/build && $(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.i
+=======
+	cd /home/nuc/ros/catkin_ws/build && $(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.i
+>>>>>>> 001c0b86613294c152ae9209fbb9e7f0f1ae8147
 .PHONY : src/gtest-all.cc.i
 
 src/gtest-all.s: src/gtest-all.cc.s
@@ -221,7 +274,11 @@ src/gtest-all.s: src/gtest-all.cc.s
 
 # target to generate assembly for a file
 src/gtest-all.cc.s:
+<<<<<<< HEAD
 	cd /home/swh/learning/ros/catkin_ws/build && $(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.s
+=======
+	cd /home/nuc/ros/catkin_ws/build && $(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.s
+>>>>>>> 001c0b86613294c152ae9209fbb9e7f0f1ae8147
 .PHONY : src/gtest-all.cc.s
 
 src/gtest_main.o: src/gtest_main.cc.o
@@ -230,7 +287,11 @@ src/gtest_main.o: src/gtest_main.cc.o
 
 # target to build an object file
 src/gtest_main.cc.o:
+<<<<<<< HEAD
 	cd /home/swh/learning/ros/catkin_ws/build && $(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+=======
+	cd /home/nuc/ros/catkin_ws/build && $(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+>>>>>>> 001c0b86613294c152ae9209fbb9e7f0f1ae8147
 .PHONY : src/gtest_main.cc.o
 
 src/gtest_main.i: src/gtest_main.cc.i
@@ -239,7 +300,11 @@ src/gtest_main.i: src/gtest_main.cc.i
 
 # target to preprocess a source file
 src/gtest_main.cc.i:
+<<<<<<< HEAD
 	cd /home/swh/learning/ros/catkin_ws/build && $(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.i
+=======
+	cd /home/nuc/ros/catkin_ws/build && $(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.i
+>>>>>>> 001c0b86613294c152ae9209fbb9e7f0f1ae8147
 .PHONY : src/gtest_main.cc.i
 
 src/gtest_main.s: src/gtest_main.cc.s
@@ -248,7 +313,11 @@ src/gtest_main.s: src/gtest_main.cc.s
 
 # target to generate assembly for a file
 src/gtest_main.cc.s:
+<<<<<<< HEAD
 	cd /home/swh/learning/ros/catkin_ws/build && $(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.s
+=======
+	cd /home/nuc/ros/catkin_ws/build && $(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.s
+>>>>>>> 001c0b86613294c152ae9209fbb9e7f0f1ae8147
 .PHONY : src/gtest_main.cc.s
 
 # Help Target
@@ -283,6 +352,10 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+<<<<<<< HEAD
 	cd /home/swh/learning/ros/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+=======
+	cd /home/nuc/ros/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+>>>>>>> 001c0b86613294c152ae9209fbb9e7f0f1ae8147
 .PHONY : cmake_check_build_system
 

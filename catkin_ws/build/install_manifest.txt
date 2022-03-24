@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /home/swh/learning/ros/catkin_ws/install/_setup_util.py
 /home/swh/learning/ros/catkin_ws/install/env.sh
 /home/swh/learning/ros/catkin_ws/install/setup.bash
@@ -7,3 +8,14 @@
 /home/swh/learning/ros/catkin_ws/install/setup.zsh
 /home/swh/learning/ros/catkin_ws/install/local_setup.zsh
 /home/swh/learning/ros/catkin_ws/install/.rosinstall
+=======
+/home/nuc/ros/catkin_ws/install/_setup_util.py
+/home/nuc/ros/catkin_ws/install/env.sh
+/home/nuc/ros/catkin_ws/install/setup.bash
+/home/nuc/ros/catkin_ws/install/local_setup.bash
+/home/nuc/ros/catkin_ws/install/setup.sh
+/home/nuc/ros/catkin_ws/install/local_setup.sh
+/home/nuc/ros/catkin_ws/install/setup.zsh
+/home/nuc/ros/catkin_ws/install/local_setup.zsh
+/home/nuc/ros/catkin_ws/install/.rosinstall
+>>>>>>> 001c0b86613294c152ae9209fbb9e7f0f1ae8147

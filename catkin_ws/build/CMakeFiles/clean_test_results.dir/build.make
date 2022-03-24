@@ -43,10 +43,17 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/swh/learning/ros/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/swh/learning/ros/catkin_ws/build
+=======
+CMAKE_SOURCE_DIR = /home/nuc/ros/catkin_ws/src
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/nuc/ros/catkin_ws/build
+>>>>>>> 001c0b86613294c152ae9209fbb9e7f0f1ae8147
 
 # Utility rule file for clean_test_results.
 
@@ -54,7 +61,11 @@ CMAKE_BINARY_DIR = /home/swh/learning/ros/catkin_ws/build
 include CMakeFiles/clean_test_results.dir/progress.make
 
 CMakeFiles/clean_test_results:
+<<<<<<< HEAD
 	/usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /home/swh/learning/ros/catkin_ws/build/test_results
+=======
+	/usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /home/nuc/ros/catkin_ws/build/test_results
+>>>>>>> 001c0b86613294c152ae9209fbb9e7f0f1ae8147
 
 clean_test_results: CMakeFiles/clean_test_results
 clean_test_results: CMakeFiles/clean_test_results.dir/build.make
@@ -71,6 +82,10 @@ CMakeFiles/clean_test_results.dir/clean:
 .PHONY : CMakeFiles/clean_test_results.dir/clean
 
 CMakeFiles/clean_test_results.dir/depend:
+<<<<<<< HEAD
 	cd /home/swh/learning/ros/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/swh/learning/ros/catkin_ws/src /home/swh/learning/ros/catkin_ws/src /home/swh/learning/ros/catkin_ws/build /home/swh/learning/ros/catkin_ws/build /home/swh/learning/ros/catkin_ws/build/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
+=======
+	cd /home/nuc/ros/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nuc/ros/catkin_ws/src /home/nuc/ros/catkin_ws/src /home/nuc/ros/catkin_ws/build /home/nuc/ros/catkin_ws/build /home/nuc/ros/catkin_ws/build/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
+>>>>>>> 001c0b86613294c152ae9209fbb9e7f0f1ae8147
 .PHONY : CMakeFiles/clean_test_results.dir/depend
 

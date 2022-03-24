@@ -2,7 +2,11 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
+<<<<<<< HEAD
   set(CMAKE_INSTALL_PREFIX "/home/swh/learning/ros/catkin_ws/install")
+=======
+  set(CMAKE_INSTALL_PREFIX "/home/nuc/ros/catkin_ws/install")
+>>>>>>> 001c0b86613294c152ae9209fbb9e7f0f1ae8147
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,7 +43,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
+<<<<<<< HEAD
   include("/home/swh/learning/ros/catkin_ws/build/gtest/googletest/cmake_install.cmake")
+=======
+  include("/home/nuc/ros/catkin_ws/build/gtest/googletest/cmake_install.cmake")
+>>>>>>> 001c0b86613294c152ae9209fbb9e7f0f1ae8147
 
 endif()
 

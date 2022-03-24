@@ -1,0 +1,8 @@
+prefix=/home/nuc/ros/catkin_ws/devel
+
+Name: create_turtle
+Description: Description of create_turtle
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -48,10 +48,17 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/swh/learning/ros/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/swh/learning/ros/catkin_ws/build
+=======
+CMAKE_SOURCE_DIR = /home/nuc/ros/catkin_ws/src
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/nuc/ros/catkin_ws/build
+>>>>>>> 001c0b86613294c152ae9209fbb9e7f0f1ae8147
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +144,24 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
+<<<<<<< HEAD
 	cd /home/swh/learning/ros/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/swh/learning/ros/catkin_ws/build/CMakeFiles /home/swh/learning/ros/catkin_ws/build/gtest/CMakeFiles/progress.marks
 	cd /home/swh/learning/ros/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/swh/learning/ros/catkin_ws/build/CMakeFiles 0
+=======
+	cd /home/nuc/ros/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/ros/catkin_ws/build/CMakeFiles /home/nuc/ros/catkin_ws/build/gtest/CMakeFiles/progress.marks
+	cd /home/nuc/ros/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/ros/catkin_ws/build/CMakeFiles 0
+>>>>>>> 001c0b86613294c152ae9209fbb9e7f0f1ae8147
 .PHONY : all
 
 # The main clean target
 clean:
+<<<<<<< HEAD
 	cd /home/swh/learning/ros/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/clean
+=======
+	cd /home/nuc/ros/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/clean
+>>>>>>> 001c0b86613294c152ae9209fbb9e7f0f1ae8147
 .PHONY : clean
 
 # The main clean target
@@ -154,17 +171,29 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
+<<<<<<< HEAD
 	cd /home/swh/learning/ros/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/preinstall
+=======
+	cd /home/nuc/ros/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/preinstall
+>>>>>>> 001c0b86613294c152ae9209fbb9e7f0f1ae8147
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
+<<<<<<< HEAD
 	cd /home/swh/learning/ros/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/preinstall
+=======
+	cd /home/nuc/ros/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/preinstall
+>>>>>>> 001c0b86613294c152ae9209fbb9e7f0f1ae8147
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
+<<<<<<< HEAD
 	cd /home/swh/learning/ros/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+=======
+	cd /home/nuc/ros/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+>>>>>>> 001c0b86613294c152ae9209fbb9e7f0f1ae8147
 .PHONY : depend
 
 # Help Target
@@ -191,6 +220,10 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+<<<<<<< HEAD
 	cd /home/swh/learning/ros/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+=======
+	cd /home/nuc/ros/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+>>>>>>> 001c0b86613294c152ae9209fbb9e7f0f1ae8147
 .PHONY : cmake_check_build_system
 

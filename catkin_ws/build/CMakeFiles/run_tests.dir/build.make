@@ -43,10 +43,17 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/swh/learning/ros/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/swh/learning/ros/catkin_ws/build
+=======
+CMAKE_SOURCE_DIR = /home/nuc/ros/catkin_ws/src
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/nuc/ros/catkin_ws/build
+>>>>>>> 001c0b86613294c152ae9209fbb9e7f0f1ae8147
 
 # Utility rule file for run_tests.
 
@@ -67,6 +74,10 @@ CMakeFiles/run_tests.dir/clean:
 .PHONY : CMakeFiles/run_tests.dir/clean
 
 CMakeFiles/run_tests.dir/depend:
+<<<<<<< HEAD
 	cd /home/swh/learning/ros/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/swh/learning/ros/catkin_ws/src /home/swh/learning/ros/catkin_ws/src /home/swh/learning/ros/catkin_ws/build /home/swh/learning/ros/catkin_ws/build /home/swh/learning/ros/catkin_ws/build/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
+=======
+	cd /home/nuc/ros/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nuc/ros/catkin_ws/src /home/nuc/ros/catkin_ws/src /home/nuc/ros/catkin_ws/build /home/nuc/ros/catkin_ws/build /home/nuc/ros/catkin_ws/build/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
+>>>>>>> 001c0b86613294c152ae9209fbb9e7f0f1ae8147
 .PHONY : CMakeFiles/run_tests.dir/depend
 

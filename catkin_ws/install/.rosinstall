@@ -1,2 +1,6 @@
 - setup-file:
+<<<<<<< HEAD
     local-name: /home/swh/learning/ros/catkin_ws/install/setup.sh
+=======
+    local-name: /home/nuc/ros/catkin_ws/install/setup.sh
+>>>>>>> 001c0b86613294c152ae9209fbb9e7f0f1ae8147

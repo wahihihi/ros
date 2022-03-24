@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 learing_communication
 -DCATKIN_DEVEL_PREFIX=/home/swh/learning/ros/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/swh/learning/ros/catkin_ws/install -G Unix Makefiles
+=======
+create_turtle:learning_communication:turtle_circle_position:turtle_controller
+-DCATKIN_DEVEL_PREFIX=/home/nuc/ros/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/nuc/ros/catkin_ws/install -G Unix Makefiles
+>>>>>>> 001c0b86613294c152ae9209fbb9e7f0f1ae8147

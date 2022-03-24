@@ -1,0 +1,11 @@
+<launch>
+
+
+    <arg name="TurtleName1"  default="Tom3" />
+    <arg name="TurtleName2"  default="Jerry7" />
+
+    <node pkg="turtle_controller" type="turtle_control_circle" name="turtle_control_circle" output="screen"/>
+    <node pkg="turtle_controller" type="turtle_adjust" name="turtle_client" output="screen" args="$(arg TurtleName2) adjust 2.0"/>
+</launch>
+
+
