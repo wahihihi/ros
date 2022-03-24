@@ -16,8 +16,8 @@ int main(int argc,char** argv){
     srv.request.name = argv[1];
     srv.request.state = argv[2];
     srv.request.c_velocity = std::stof(argv[3]);
-    ROS_INFO("Call service to adjust a turtle[name : %s]",
-             srv.request.name.c_str());
+    ROS_INFO("---Call service to adjust a turtle[name2 : %s , state: %s , c_velocity : %s]",
+             srv.request.name.c_str(),srv.request.state.c_str(),argv[3]);
 
     client_.call(srv);
 

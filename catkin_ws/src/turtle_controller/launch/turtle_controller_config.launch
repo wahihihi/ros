@@ -1,0 +1,12 @@
+<launch>
+
+
+    <arg name="TurtleName1"  default="Tom3" />
+    <arg name="TurtleName2"  default="Jerry7" />
+    
+    <node pkg="turtle_controller" type="spawn_a_turtle" name="nest"></node>
+    <node pkg="turtle_controller" type="create_turtle_request" name="spawn_turtle" output="screen" args="$(arg TurtleName2)"/>
+
+</launch>
+
+
