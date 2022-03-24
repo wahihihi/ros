@@ -1,0 +1,8 @@
+prefix=/home/swh/learning/ros/catkin_ws/install
+
+Name: learing_communication
+Description: Description of learing_communication
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
