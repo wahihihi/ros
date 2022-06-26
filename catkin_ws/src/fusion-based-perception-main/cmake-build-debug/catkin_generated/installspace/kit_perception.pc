@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: kit_perception
+Description: Description of kit_perception
+Version: 0.0.1
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp sensor_msgs cv_bridge
