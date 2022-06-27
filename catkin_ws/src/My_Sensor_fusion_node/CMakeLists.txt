@@ -1,20 +1,25 @@
-cmake_minimum_required(VERSION 3.22)
+cmake_minimum_required(VERSION 3.16.3)
+add_compile_options(-std=c++11 -g)
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_BUILD_TYPE Debug)
 project(My_Sensor_fusion_node)
 
-set(CMAKE_CXX_STANDARD 14)
 find_package(Boost REQUIRED COMPONENTS filesystem)
 find_package(Eigen3 REQUIRED)
 find_package(yaml-cpp REQUIRED)
 
-file(GLOB _SRCS "fusion/*.cpp")
 
-add_library(kit_perception_fusion ${_SRCS})
-target_link_libraries(kit_perception_fusion PUBLIC
-        yaml-cpp)
 
 include_directories(
     ${EIGEN3_INCLUDE_DIRS}
 )
+
+
+file(GLOB _SRCS "fusion/*.cpp")
+add_library(kit_perception_fusion ${_SRCS})
+target_link_libraries(kit_perception_fusion PUBLIC
+        yaml-cpp)
+
 
 set(EZCFG_STRUCT_HEADER_FILE ${CMAKE_CURRENT_SOURCE_DIR}/input_data_type.h)
 add_subdirectory(easy_config)

@@ -27,7 +27,7 @@ namespace proto_input
     std::vector<std::tuple<double,FileTag,std::string>> frameTimeMatch(std::list<std::tuple<double,FileTag,std::string>>&& data,size_t type_name);
     std::vector<std::tuple<double, FileTag, std::string>> mergeInputSequece(std::vector<std::list<std::tuple<double,FileTag,std::string>>>&& data );
 
-    kit::perception::fusion::LiDARObjectConstPtr makeLiDARObjectPtr(LidarObject raw_lo,double time);
+    kit::perception::fusion::LiDARObjectPtr makeLiDARObjectPtr(LidarObject raw_lo,double time);
     kit::perception::fusion::CameraObjectPtr  makeCameraObjectPtr(CameraObject raw_co,double time);
 }
 

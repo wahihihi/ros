@@ -24,7 +24,7 @@ bool FusionWrapper::Update(const FramePtr &frame) {
         tracker_->GetGlobalObjects(global_obj_list);
         if (!predictor_->Predict(global_obj_list, frame->lidar_objs->time_ns)) {
             std::cout << "predict error for lidar measurement." << std::endl;
-            return false; 
+            return false;
         }
         // map of lidar obj idx and global obj idx
         std::map<size_t, int> local_global_map;
@@ -42,7 +42,7 @@ bool FusionWrapper::Update(const FramePtr &frame) {
     //     tracker_->GetGlobalObjects(global_obj_list);
     //     if (!predictor->Predict(global_obj_list, frame->lidar_objs->time_ns)) {
     //         std::cout << "predict error for radar measurement." << std::endl;
-    //         return false; 
+    //         return false;
     //     }
     //     std::map<size_t, int> associate_arr;
     //     matcher_->Match(frame->radar_objs, global_obj_list, associate_arr);
@@ -54,7 +54,7 @@ bool FusionWrapper::Update(const FramePtr &frame) {
         tracker_->GetGlobalObjects(global_obj_list);
         if (!predictor_->Predict(global_obj_list, frame->camera_objs->time_ns)) {
             std::cout << "predict error for camera measurement." << std::endl;
-            return false; 
+            return false;
         }
         // map of camera obj idx and global obj idx
         std::map<size_t, int> local_global_map;

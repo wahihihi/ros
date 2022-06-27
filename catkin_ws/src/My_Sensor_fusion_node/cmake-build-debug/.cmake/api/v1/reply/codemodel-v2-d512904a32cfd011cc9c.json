@@ -1,0 +1,120 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16.3"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						3
+					]
+				},
+				{
+					"build" : "easy_config",
+					"jsonFile" : "directory-easy_config-Debug-ab430b091d78343628b6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "easy_config",
+					"targetIndexes" : 
+					[
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "My_Sensor_fusion_node",
+					"targetIndexes" : 
+					[
+						0,
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "easy_config",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "My_Sensor_fusion_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-My_Sensor_fusion_node-Debug-41895216ffc402987380.json",
+					"name" : "My_Sensor_fusion_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "compiler::@dfc1249c7228de5afadb",
+					"jsonFile" : "target-compiler-Debug-625e21d81c3ced45adcf.json",
+					"name" : "compiler",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "interpreter_extern::@dfc1249c7228de5afadb",
+					"jsonFile" : "target-interpreter_extern-Debug-b7dd9679302f19affb33.json",
+					"name" : "interpreter_extern",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "kit_perception_fusion::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kit_perception_fusion-Debug-61cd0e20da283a5c1e80.json",
+					"name" : "kit_perception_fusion",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/nuc/ros/catkin_ws/src/My_Sensor_fusion_node/cmake-build-debug",
+		"source" : "/home/nuc/ros/catkin_ws/src/My_Sensor_fusion_node"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -1,4 +1,4 @@
-# Install script for directory: /home/swh/catkin_ws/src/fusion-based-perception-main/backward-cpp
+# Install script for directory: /home/nuc/ros/catkin_ws/src/fusion-based-perception-main/backward-cpp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,10 +43,10 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES "/home/swh/catkin_ws/src/fusion-based-perception-main/backward-cpp/backward.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES "/home/nuc/ros/catkin_ws/src/fusion-based-perception-main/backward-cpp/backward.hpp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/backward" TYPE FILE FILES "/home/swh/catkin_ws/src/fusion-based-perception-main/backward-cpp/BackwardConfig.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/backward" TYPE FILE FILES "/home/nuc/ros/catkin_ws/src/fusion-based-perception-main/backward-cpp/BackwardConfig.cmake")
 endif()
 

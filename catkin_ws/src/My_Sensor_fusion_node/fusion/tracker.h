@@ -13,8 +13,24 @@ namespace kit{
 namespace perception{
 namespace fusion{
 class Tracker {
+public:
+    Tracker():
+        global_obj_list_(std::make_shared<FusionObjectList>(FusionObjectList())),
+        max_live_duration_(6),
+        startup_duration_(6),
+        dist_thres_(0.5),
+        iou_thres_(0.5) {}
+
+    bool Update(const FusionObjectList &local_obj_list,const std::map<size_t,int>& map);
+    bool Update(const LiDARObjectListPtr &local_obj_list,const std::map<size_t,int>& map);
+    bool Update(const CameraObjectListPtr &local_obj_list,const std::map<size_t,int>& map);
+    bool Update(const RadarObjectListPtr &local_obj_list,const std::map<size_t,int>& map);
+
+    void GetFusionResults(const FusionObjectListPtr &res);
+    void GetGlobalObject(const FusionObjectListPtr &res);
+
 private:
-    void PerodicallyUpdateLifeDuration();
+    void PeriodicallyUpdateLifeDuration();
 
     std::vector<std::shared_ptr<FusionEKF>> motion_filters_;
 

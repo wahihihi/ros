@@ -32,7 +32,7 @@ int main(int argc, char** argv) {
 
     printMregeRes(data_frame_seq);
     ezcfg::Interpreter itp;
-//    kit::perception::fusion::FusionWrapper fusion{ argv[1] };
+    kit::perception::fusion::FusionWrapper fusion{ argv[1] };
     for (auto it = data_frame_seq.begin(); it < data_frame_seq.end();)
     {
         // anyway ,first step is take the timestamp and pose from sensor
@@ -55,10 +55,38 @@ int main(int argc, char** argv) {
             {
                 itp.lex.next();
                 itp.parse(raw_co);
-                co_list->objs.push_back()
+                co_list->objs.push_back(proto_input::makeCameraObjectPtr(raw_co,std::get<0>(*it)));
             }
+            co_list->time_ns = std::get<0>(*it);
+            frame->camera_objs = std::move(co_list);
+            ++it;
         }
 
+        //get lidar detection results
+        if (std::get<1>(*it) == proto_input::FileTag::LIDAR)
+        {
+            proto_input::LidarObject raw_lo;
+            kit::perception::fusion::LiDARObjectListPtr lo_list = std::make_shared<kit::perception::fusion::LiDARObjectList>();
+            itp.loadFile(std::get<2>(*it));
+            while (itp.lex.getToken() == ezcfg::Token::ID && itp.lex.getTokenText() == "perception_obstacle")
+            {
+                itp.lex.next();
+                itp.parse(raw_lo);
+                raw_lo.anchor_point.x = raw_lo.anchor_point.x - pose.pose.position.x;
+                raw_lo.anchor_point.y = raw_lo.anchor_point.y - pose.pose.position.y;
+                raw_lo.anchor_point.z = raw_lo.anchor_point.z - pose.pose.position.z;
+                lo_list->objs.push_back(proto_input::makeLiDARObjectPtr(raw_lo,std::get<0>(*it)));
+            }
+            lo_list->time_ns = std::get<0>(*it);
+            frame->lidar_objs = std::move(lo_list);
+            ++it;
+        }
 
+        fusion.Update(frame);
+        kit::perception::fusion::FusionObjectListPtr fusion_res =
+                std::make_shared<kit::perception::fusion::FusionObjectList>(kit::perception::fusion::FusionObjectList());
+        fusion.GetFusionResult(fusion_res);
+
+        return 0;
     }
 }

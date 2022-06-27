@@ -50,10 +50,32 @@ namespace proto_input
         return frameTimeMatch(std::move(merge_list),data.size());
     }
 
-    kit::perception::fusion::LiDARObjectConstPtr makeLiDARObjectPtr(LidarObject raw_lo,double time)
+    kit::perception::fusion::LiDARObjectPtr makeLiDARObjectPtr(LidarObject raw_lo,double time)
     {
         auto lo = std::make_shared<kit::perception::fusion::LiDARObject>();
         lo->time_ns = time;
-        lo->id =
+        lo->id = raw_lo.id;
+        lo->x = raw_lo.anchor_point.x;
+        lo->y = raw_lo.anchor_point.y;
+        lo->z = raw_lo.anchor_point.z;
+        lo->length = raw_lo.length;
+        lo->width = raw_lo.width;
+        lo->height = raw_lo.height;
+        lo->velo_x = raw_lo.velocity.x;
+        lo->velo_y = raw_lo.velocity.y;
+        lo->velo_z = raw_lo.velocity.z;
+        return lo;
+    }
+
+    kit::perception::fusion::CameraObjectPtr makeCameraObjectPtr(CameraObject raw_co,double time)
+    {
+        auto co = std::make_shared<kit::perception::fusion::CameraObject>();
+        co->time_ns = time;
+        co->id = raw_co.id;
+        co->ux = (raw_co.bbox2d.xmax + raw_co.bbox2d.xmin) / 2;
+        co->vy = (raw_co.bbox2d.ymax + raw_co.bbox2d.ymin) / 2;
+        co->width = raw_co.bbox2d.xmax - raw_co.bbox2d.xmin;
+        co->height = raw_co.bbox2d.ymax - raw_co.bbox2d.ymin;
+        return co;
     }
 }

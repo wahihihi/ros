@@ -1,4 +1,4 @@
-prefix=/home/swh/catkin_ws/src/fusion-based-perception-main/cmake-build-debug/devel
+prefix=/home/nuc/ros/catkin_ws/src/fusion-based-perception-main/cmake-build-debug/devel
 
 Name: kit_perception
 Description: Description of kit_perception

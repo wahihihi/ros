@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "roscpp;sensor_msgs;cv_bridge".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "kit_perception"
-PROJECT_SPACE_DIR = "/home/swh/catkin_ws/src/fusion-based-perception-main/cmake-build-debug/devel"
+PROJECT_SPACE_DIR = "/home/nuc/ros/catkin_ws/src/fusion-based-perception-main/cmake-build-debug/devel"
 PROJECT_VERSION = "0.0.1"

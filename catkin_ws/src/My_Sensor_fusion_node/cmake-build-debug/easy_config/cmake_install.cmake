@@ -1,4 +1,4 @@
-# Install script for directory: /home/swh/CLionProjects/My_Sensor_fusion_node/easy_config
+# Install script for directory: /home/nuc/ros/catkin_ws/src/My_Sensor_fusion_node/easy_config
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
