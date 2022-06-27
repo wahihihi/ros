@@ -1,4 +1,4 @@
-# Install script for directory: /home/nuc/ros/catkin_ws/src/fusion-based-perception-main/easy_config
+# Install script for directory: /home/swh/ros/catkin_ws/src/fusion-based-perception-main/easy_config
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

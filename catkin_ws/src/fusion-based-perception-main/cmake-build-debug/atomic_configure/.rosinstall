@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/nuc/ros/catkin_ws/src/fusion-based-perception-main/cmake-build-debug/devel/setup.sh
+    local-name: /home/swh/ros/catkin_ws/src/fusion-based-perception-main/cmake-build-debug/devel/setup.sh

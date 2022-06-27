@@ -67,8 +67,8 @@ set(kit_perception_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(kit_perception_SOURCE_PREFIX /home/nuc/ros/catkin_ws/src/fusion-based-perception-main)
-  set(kit_perception_DEVEL_PREFIX /home/nuc/ros/catkin_ws/src/fusion-based-perception-main/cmake-build-debug/devel)
+  set(kit_perception_SOURCE_PREFIX /home/swh/ros/catkin_ws/src/fusion-based-perception-main)
+  set(kit_perception_DEVEL_PREFIX /home/swh/ros/catkin_ws/src/fusion-based-perception-main/cmake-build-debug/devel)
   set(kit_perception_INSTALL_PREFIX "")
   set(kit_perception_PREFIX ${kit_perception_DEVEL_PREFIX})
 else()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /usr/local/lib;/home/nuc/catkin_ws/devel_isolated/mbot_teleop/lib;/home/nuc/catkin_ws/install_isolated/lib;/home/nuc/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /usr/local/lib;/home/swh/catkin_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
