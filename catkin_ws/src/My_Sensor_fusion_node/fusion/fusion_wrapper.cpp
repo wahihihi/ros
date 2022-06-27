@@ -21,6 +21,9 @@ bool FusionWrapper::Update(const FramePtr &frame) {
     {
         std::cout << "updating with lidar object ..." << std::endl;
         tracker_->GetGlobalObject(global_obj_list);
+        if (!predictor_->Predict(global_obj_list,frame->lidar_objs->time_ns)){
+            std::cout << "predict error for lidar measurement." << std::endl;
+        }
     }
     return true;
 }
