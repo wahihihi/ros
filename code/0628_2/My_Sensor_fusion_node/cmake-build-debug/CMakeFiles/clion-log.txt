@@ -1,0 +1,4 @@
+/home/nuc/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/nuc/CLionProjects/My_Sensor_fusion_node
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/nuc/CLionProjects/My_Sensor_fusion_node/cmake-build-debug

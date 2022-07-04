@@ -1,0 +1,2 @@
+/usr/bin/ar qc libkit_perception_fusion.a CMakeFiles/kit_perception_fusion.dir/fusion/fusion_ekf.cpp.o CMakeFiles/kit_perception_fusion.dir/fusion/fusion_wrapper.cpp.o CMakeFiles/kit_perception_fusion.dir/fusion/matcher.cpp.o CMakeFiles/kit_perception_fusion.dir/fusion/predictor.cpp.o CMakeFiles/kit_perception_fusion.dir/fusion/tracker.cpp.o
+/usr/bin/ranlib libkit_perception_fusion.a
